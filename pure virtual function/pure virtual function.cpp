@@ -8,7 +8,10 @@ using namespace std;
 class Cbase
 {
 public:
-	virtual void test() = 0;
+	virtual void test()
+	{
+
+	}
 	virtual void display()
 	{
 		cout << "»ùÀà" << endl;
@@ -30,9 +33,9 @@ public:
 int main()
 {
 	Cbase *q;
-	//Cbase obj1;
+	Cbase obj1;
 	Cderivd obj2;
-	//obj1.display();
+	obj1.display();
 	q = &obj2;
 	q->Cbase::display();
 	q->display();
